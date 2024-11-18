@@ -35,8 +35,8 @@ const Services = () => {
                             Brainwave unlocks the potential of AI-powered applications
                         </p>
                         <ul className="body-2">
-                            {brainwaveServices.map((item) => (
-                                <li key={item.id} className="flex items-start py-4 gap-4 border-t border-n-6 ">
+                            {brainwaveServices.map((item, index) => (
+                                <li key={index} className="flex items-start py-4 gap-4 border-t border-n-6 ">
                                     <img width={24} height={24} src={check} alt="" />
                                     <p>{item}</p>
                                 </li>
